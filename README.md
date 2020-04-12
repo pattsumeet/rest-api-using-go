@@ -12,3 +12,21 @@ go get -u github.com/gorilla/mux
 
 Execute:
 go run main.go
+
+Use POSTMAN or similar tool for adding article:
+
+[POST] http://localhost:10000/article
+Body: {
+    "Id": "3", 
+    "Title": "Newly Created Post", 
+    "desc": "The description for my new post", 
+    "content": "my articles content" 
+}
+
+[PUT] http://localhost:10000/article/3
+Body: {
+    "Id": "3", 
+    "Title": "Newly Created Post4", 
+    "desc": "The description for my new post4", 
+    "content": "my articles content4" 
+}
